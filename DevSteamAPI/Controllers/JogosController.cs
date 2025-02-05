@@ -30,7 +30,7 @@ namespace DevSteamAPI.Controllers
         {
             return await _context.jogos.ToListAsync();
         }
-
+        [AllowAnonymous]
         // GET: api/Jogos/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Jogo>> GetJogo(Guid id)
