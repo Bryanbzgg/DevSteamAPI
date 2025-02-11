@@ -104,5 +104,7 @@ namespace DevSteamAPI.Controllers
         {
             return _context.categorias.Any(e => e.CategoriaId == id);
         }
+        // items carrinho endpoint que calcula o valor total do item no carrinho////// e a cada item adicionado no carrinho, o valor total do carrinho é atualizado
+        //endpoint que busca por 
     }
 }
